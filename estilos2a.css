@@ -210,26 +210,43 @@ cursor: pointer;
 
 }
 .nosotros{
-margin-left: 20px;
-padding-left: 10px;
-}
+  margin-left: 20px;
+  padding-left: 10px;
+ }
+ .nosotros img{
+  display: flex;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 50%;
+ }
 
 .nosotros p{
-text-indent: 20px;
-line-height: 2;
+  text-indent: 20px;
+  line-height: 2;
 }
-.nosotros .col-12{
-margin: 0;
-padding: 0;
-text-align: center;
 
+
+.nosotros .col-12{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
 }
 .nosotros .col-12 img{
-width: 60px;
-height: 50px;
-margin: 0;
-padding: 0;
-text-align: center;
+  width: 60px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.video {
+  max-width: 560px; /* Establece el ancho máximo del contenedor del video */
+  margin: 0 auto !important; /* Centra horizontalmente el contenedor */
+}
+
+.video iframe {
+  width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+  height: auto; /* Mantiene la proporción original del video */
 }
 .reserva button[type="submit"]:hover {
 background-color: #0056b3;
