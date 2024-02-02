@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./estilos2.css"> -->
+    <link rel="stylesheet" href="./estilos2a.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <nav class="row" >
+        <div class="navegacion" >
+          
+          <div  >
+            <ul >
+              <div class="col-3">
+                <li >
+                  <a href="./index.html">Inicio</a>
+                </li>
+              </div>
+              <div class="col-3">
+                <li>
+                  <a href="./quienes somos.html">Quienes somos</a>
+                </li>
+              </div>
+              <div class="col-3">
+                <li >
+                  <a href="./menu.html">Menu</a>
+                </li>
+              </div>
+              <div class="col-3">
+                <li >
+                  <a href="./contacto.html">Contacto</a>
+                </li>
+              </div>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav> 
+      <section>
+        <div class="row">
+          <div class="identificador">
+            <div class="col-12">
+              <h1><img src="./images/vieira.png" alt="Facebook">A Francachela</h1>
+              <h5>Restaurante</h5>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="res">
+        <form action="http://localhost/ud4/formulario.php" method="POST">
+            <div class="reserva">
+                <div class="row">
+                    <div class="column">
+                        <div>
+                            <label for="nombre_reserva">Nombre para la reserva:</label>
+                            <input type="text" name="nombre_reserva" required pattern="[a-zA-Z]{10,35}">
+                        </div>
+                        <div>
+                            <label for="numero_personas">Numero de personas:</label>
+                            <input type="number" name="numero_personas" required min="1" max="50">
+                        </div>
+                        <div>
+                            <label for="hora">A qué hora solicita reservar:</label>
+                            <input type="time" id="hora" name="hora" value="13:00" min="13:00" max="22:00">
+                        </div>
+                        <div >
+                            <fieldset>
+                                <legend>Ubicación:</legend>
+                                <div class="radio">
+                                    <input type="radio" id="interior" name="ubicacion" value="interior">
+                                    <label for="interior">Interior</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" id="terraza" name="ubicacion" value="terraza" checked>
+                                    <label for="terraza">Terraza</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <label for="telefono_reserva">Telefono para la reserva:</label>
+                            <input type="tel" name="telefono_reserva" pattern="[6-9][0-9]{8}">
+                        </div>
+                        <div>
+                            <label for="fecha">Introduzca la fecha en que desea reservar:</label>
+                            <input type="date" id="fecha" name="fecha" required min="2024-01-01" max="2024-12-31">
+                            
+                        </div>
+                        <div>
+                            <label for="alergenos">Por favor indiquenos si alguien en su grupo presenta alérgia a:</label>
+                            <select id="alergenos" name="alergenos" multiple size="4">
+                                <option value="" disabled>Selecciona alérgenos</option>
+                                <option value="gluten">Gluten</option>
+                                <option value="lactosa">Lactosa</option>
+                                <option value="frutos-secos">Frutos Secos</option>
+                                <option value="mariscos">Mariscos</option>
+                            </select>
+                        </div>
+                        <button type="submit">Reservar</button>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </section>
+    
+     
+      
+    
+    
+    <footer >
+        <div class="row">
+          <div class="ubicacion">
+            <div class="col-12">
+              <p>Plaza Central 2. 36400 O Porriño, Pontevedra. Teléfono: <a href="tel:+34664665969"> 664 66 59 69</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="pie">
+          <div class="row">
+            <div class="socials">
+              <ul>
+                <li>
+                    <div class="col-4">
+                        <a href="#"><img src="./images/instagramC.png" alt="InstaGram"></a>
+                       
+                    </div>
+                </li>
+                    
+                <li>
+                    <div class="col-4">
+                        <a href="#"><img src="./images/x-twitterC.png" alt="X-Twitter"></a>
+                      
+                    </div>
+                </li>
+                <li>
+                    <div class="col-4">
+                        <a href="#"><img src="./images/facebookC.png" alt="Facebook"></a>
+                        
+                    </div>
+                </li>
+                    
+              </ul>
+            </div>
+            
+          </div>    
+        </div>
+       
+      
+    </footer>
+    </body>
+
+</html>

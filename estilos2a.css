@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+nav.row{
+  margin-left: 20px;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(51,51,51);
+  
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body{
+  background-color: rgb(255, 255, 153);
+  margin-top: 0px;
+}
+.inicio{
+  width: 800px;
+  height: 534px;
+  background-image: url('./images/resta.jpg');
+  background-repeat: no-repeat;
+  margin-left: 250px;
+  padding-top: 20px;
+}
+.navegacion ul{
+  padding-top: 15px;
+  list-style-type: none;
+}
+.navegacion a{
+  text-decoration: none;
+  color: rgb(255, 255, 150);
+  font-weight: bold;
+  
+}
+.navegacion a:hover{
+  color: rgb(153, 102, 255);
+  text-decoration: underline;
+  font-weight: bold;
+  
+}
+.navegacion a:visited{
+  color: rgb(204, 204, 0);
+  font-weight: bold;
+}
+.navegacion a:active{
+  color: darkred;
+  font-weight: bold;
+  
+}
+.navegacion .col-3{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.identificador{
+  margin-left: 20px;
+  
+}
+.identificador img{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: -5px;
+}
+.identificador h1,
+.identificador h5,
+.identificador p{
+  margin: 0;
+  border: 0;
+}
+.identificador .col-12 h1,
+.identificador .col-12 h5{
+  text-align: center;
+  background-color: rgba(18, 47, 216, 0.5);
+}
+.menu{
+  margin-left: 20px;
+  border: 1px dashed darkred;
+}
+.menu .column{
+  border: 1px dashed darkred;
+}
+.menu div.column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu div.column > div {
+  width: 100%;
+  margin-top: 5px;
+}
+.menu ul{
+  list-style-type: none;
+}
+.menu li{
+  color: rgb(0, 19, 139);
+  font-weight: bold;
+}
+.menu img{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  align-self: flex-end;
+  border: 1px dotted darkred;
+  background-color: rgb(153, 102, 255);
+}
+
+@media screen and (max-width: 767px) {
+  .inicio{
+    width: 350px;
+    height: 534px;
+    background-image: url('./images/index1.jpg');
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    padding-top: 20px;
+  }
+  .res {
+    margin-left: 0%;/
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+.res {
+  margin-left: 25%; 
+
+}
+}
+
+
+
+
+.reserva {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 20px;
+height: 450px;
+}
+.reserva .radio {
+  margin-left: 5px;
+}
+
+.column {
+flex-basis: 48%; 
+}
+
+
+.reserva label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.reserva input[type="text"],
+.reserva input[type="date"],
+.reserva input[type="time"],
+.reserva input[type="tel"],
+.reserva input[type="number"],
+.reserva select {
+width: 100%;
+padding: 15px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.reserva button[type="submit"] {
+padding: 10px 20px;
+margin-left: 30%;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+
+}
+.nosotros{
+margin-left: 20px;
+padding-left: 10px;
+}
+
+.nosotros p{
+text-indent: 20px;
+line-height: 2;
+}
+.nosotros .col-12{
+margin: 0;
+padding: 0;
+text-align: center;
+
+}
+.nosotros .col-12 img{
+width: 60px;
+height: 50px;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.reserva button[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+.ubicacion{
+  margin-left: 20px;
+}
+
+.ubicacion .col-12 p{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(18, 47, 216, 0.5);
+  font-weight: bold;
+}
+.pie .row{
+  margin-left: 20px;
+}
+.socials ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.socials .col-4 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.socials img{
+  width: 30px;
+  height: 30px;
+  align-content: center;
+}
